@@ -34,9 +34,20 @@ ELK搭配GrayLog使用
 # elasticSearch
 下載網址 : https://www.elastic.co/downloads/elasticsearch
 
+[elasticSearch](https://github.com/willson2021/ELK_GRAYLOG/blob/master/ElasticSearch/elasticsearch.yml)
+
+啟動指令 bin\elasticsearch
+
 # GrayLog
 因Windows無法安裝故使用Docker來安裝GrayLog
 Docker Cmd : docker run --name graylog -d -p 9000:9000 -p 12201:12201/udp -p 1514:1514 graylog/graylog:5.1.3
 
+-name : Container的名稱
+-p : 指定本機對應docker Container的Port號
+
+Docker注意事項 : 因Docker環境的LocalHost是docker本身內部環境，固如果需連線本機就必須先找到機器的ip設定
+
 # Mongodb
 下載網址 : https://www.mongodb.com/try/download/community
+
+安裝後會自動安裝Mongo Compass可以直接進行連線測試
