@@ -25,6 +25,12 @@ ELK搭配GrayLog使用
 # Logstash
 下載網址 : https://www.elastic.co/downloads/logstash
 
+[LogStash設定檔案範例](https://github.com/willson2021/ELK_GRAYLOG/blob/master/LogStash/logstash-sample.conf)
+
+啟動指令 logstash -f D:\ELK\logstash-8.11.1\logstash-8.11.1\config\logstash-sample.conf
+
+-f : 指定logstash YML檔案路徑
+
 # elasticSearch
 下載網址 : https://www.elastic.co/downloads/elasticsearch
 
