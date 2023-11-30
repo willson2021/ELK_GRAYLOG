@@ -31,6 +31,16 @@ ELK搭配GrayLog使用
 
 -f : 指定logstash YML檔案路徑
 
+## 安裝Plugin logstash-output-gelf
+
+安裝指令 bin\logstash-plugin install logstash-output-gelf
+
+準備離線安裝包
+要在有網路的主機進行安裝後
+下指令 : bin\logstash-plugin prepare-offline-pack logstash-output-gelf
+下完指令後會再根目錄產生.zip檔案
+安裝離線包指令 : bin/logstash-plugin install file:///c:/path/to/logstash-offline-plugins-8.11.1.zip
+
 # elasticSearch
 下載網址 : https://www.elastic.co/downloads/elasticsearch
 
