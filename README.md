@@ -14,7 +14,13 @@ ELK搭配GrayLog使用
 
 # Filebeat 
 下載網址 : https://www.elastic.co/downloads/beats/filebeat
-Filebeat Yml檔範例
+
+[FilebeatYml檔範例](https://github.com/willson2021/ELK_GRAYLOG/blob/master/Filebeat/filebeat.yml)
+
+啟動指令 cd bin\filebeat -c D:\ELK\filebeat-8.11.1-windows-x86_64\filebeat.yml -path.logs D:\ELK\filebeat-8.11.1-windows-x86_64\logs
+
+-c : 指定Filebeat YML檔案路徑
+-path.logs : 指定Log路徑
 
 # Logstash
 下載網址 : https://www.elastic.co/downloads/logstash
