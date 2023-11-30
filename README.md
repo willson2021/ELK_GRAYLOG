@@ -5,7 +5,7 @@ ELK搭配GrayLog使用
 此LAB應用以下幾種工具達到紀錄LOG的目的
 - FileBeat (收取Log檔案)
 - LogStash (Parse Log 檔案
-- ElasticSearch_7.10.2 (Log搜尋引擎 + 儲存體)
+- ElasticSearch_7.10.2 (Log搜尋引擎 + 儲存體) (注意!! Graylog 最高只支援ElasticSearch 7.10.X版，後面改用OpenSearch)
 - GrayLog_5.1.3 (讀取ElasticSearch 讀取Log畫面、搭配Mongodb設定)
 
 # 架構圖如下
@@ -14,6 +14,7 @@ ELK搭配GrayLog使用
 
 # Filebeat 
 下載網址 : https://www.elastic.co/downloads/beats/filebeat
+Filebeat Yml檔範例
 
 # Logstash
 下載網址 : https://www.elastic.co/downloads/logstash
